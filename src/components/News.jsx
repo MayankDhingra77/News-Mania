@@ -6,7 +6,7 @@ export default function News() {
     const[loading,setLoading] = useState(true) ;
 
     function fetchNews() {
-        fetch("https://newsapi.org/v2/everything?q=tesla&from=2026-02-20&sortBy=publishedAt&apiKey=278f1bad285142d180111b8e32c7a725")
+        fetch("https://newsapi.org/v2/everything?q=tesla&from=2026-02-28&sortBy=publishedAt&apiKey=278f1bad285142d180111b8e32c7a725")
             .then(res => res.json())
             .then(data => {setNews(data.articles);
             setLoading(false) ; })
